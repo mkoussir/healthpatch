@@ -1,0 +1,73 @@
+*{
+    font-family: 'Lato', sans-serif;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.logo{
+    margin:1rem 2rem;
+}
+.wrapper{
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    width: 100vw;
+}
+.nav-bar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    /* margin-bottom: 10px; */
+}
+.nav-bar a{
+   text-decoration: none;
+   color: black;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    /* width: 20%; */
+}
+.options a {
+    margin: 1rem 2rem;
+}
+
+.sign{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    /* width: 20%; */
+}
+.sign a {
+    margin: 1rem 2rem;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% main content %%%%%%%%%%%%%%%%%%%%%%%%%%%ù */
+
+
+.main{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: crimson;
+    /* z-index: -1; */
+}
+
+.side-bar a{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+.side-bar a:hover{
+    background-color:darkslategrey;
+    color: whitesmoke;
+}

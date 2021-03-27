@@ -1,0 +1,180 @@
+*{
+    font-family: 'Lato', sans-serif;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.logo{
+    margin:1rem 2rem;
+}
+.wrapper{
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    width: 100vw;
+}
+.nav-bar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    /* margin-bottom: 10px; */
+}
+.nav-bar a{
+   text-decoration: none;
+   color: black;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    /* width: 20%; */
+}
+.options a {
+    margin: 1rem 2rem;
+}
+
+.sign{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    /* width: 20%; */
+}
+.sign a {
+    margin: 1rem 2rem;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% main content %%%%%%%%%%%%%%%%%%%%%%%%%%%ù */
+
+.main{
+    position: relative;
+    display: flex;
+    height:100%;
+    width: 100%;
+}
+.patients-list{
+    height: 100%;
+    width: 15%;
+    background-color:snow;
+    box-shadow: 10px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+.data-display{
+    height: 100%;
+    width: 10%;
+    background-color:snow;
+    box-shadow: 10px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.patients-list li,.data-display li{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.patients-list a, .data-display a{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+.active {
+    background-color:rgb(36, 97, 97);
+    color: whitesmoke !important;
+}
+
+.patients-list a:hover{
+    background-color:rgb(22, 168, 168);
+
+}
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: crimson;
+    z-index: -2;
+}
+.display-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    background-color: crimson;
+    width: 100%;
+    height: 100%;
+}
+.display-wrapper a{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+.live-wrapper, .date-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 50%;
+    width: 40%;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+
+}
+.live-wrapper a{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-image:url("../Media/bears1.gif");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.date-wrapper a{
+    height: 100%;
+    width: 100%;
+    background-image:url("../Media/bears2.gif");
+    background-size: cover;
+    background-position:center;
+}
+.live-wrapper::after , .date-wrapper::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease-in-out;
+}
+.live-wrapper:hover::after , .date-wrapper:hover::after{
+    opacity: 1;
+}
+.comment{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    pointer-events: none;
+}
+
+
+.timestamp{
+    height: 3rem;
+    background-color: whitesmoke;
+    width: 100%;
+    box-shadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
